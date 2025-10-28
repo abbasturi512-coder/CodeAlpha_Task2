@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery | CodeAlpha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <div class="filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="nature">Nature</button>
+      <button data-filter="architecture">Architecture</button>
+      <button data-filter="people">People</button>
+      <button data-filter="animals">Animals</button>
+    </div>
+  </header>
+
+ <section class="gallery">
+  <button class="nav-btn" id="prevBtn">‹</button>
+
+  <div class="images-container">
+    <div class="image" data-category="nature"><img src="https://picsum.photos/id/1018/400/300" alt="Nature 1"></div>
+   <div class="image" data-category="architecture">
+  <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80" alt="Modern Architecture Building">
+</div>
+    <div class="image" data-category="people"><img src="https://picsum.photos/id/1005/400/300" alt="People"></div>
+    <div class="image" data-category="animals"><img src="https://picsum.photos/id/1024/400/300" alt="Animals"></div>
+    <div class="image" data-category="nature"><img src="https://picsum.photos/id/1019/400/300" alt="Nature 2"></div>
+  </div>
+
+  <button class="nav-btn" id="nextBtn">›</button>
+</section>
+
+<script src="script.js"></script>
